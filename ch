@@ -11,9 +11,6 @@ else
     profile="Default"
 fi
 
-echo "$profile"
-echo "$incognito"
-
 if [ $incognito = "0" ]; then
     google-chrome --profile-directory="$profile"
 else
